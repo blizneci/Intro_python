@@ -1,0 +1,48 @@
+years_list = [1989, 1990, 1991, 1992, 1993, 1994]
+print(years_list)
+print('В этом году мне было 3 года:', years_list[4])
+print('В ', years_list[-1], 'мне было больше всего лет')
+things = ['mozzarella', 'cinderella', 'salmonella']
+print(things[1].capitalize())
+print(things[0].upper())
+things.remove('salmonella') 
+print(things)
+
+surprise = ['Groucho', 'Chico', 'Harpo']
+print(surprise)
+
+surprise[-1] = surprise[-1].lower()
+print(surprise[-1])
+surprise[-1] = surprise[-1][::-1]
+print(surprise[-1].capitalize())
+e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}
+print('English to French dict: ', '\n', e2f)
+print('Walrus in french is: ', e2f['walrus'])
+f2e = dict()
+for english, french in e2f.items():
+    f2e[french] = english 
+
+print('French to English dict: ', f2e)
+print('"chien" in english is: ', f2e['chien'])
+english_words_set = set(e2f.keys())
+print('English words set in e2f is: ', english_words_set)
+
+life = dict()
+life = {
+    'animals': {
+        'cats': [
+            'Henri', 'Grumpy', 'Lucy'
+            ],
+        'octopi': {},
+        'emus': {},
+        }, 
+    'plants': {},
+    'other': {}
+    }
+
+print('Life dictionary is: ', life)
+print('life keys is: ', list(life.keys()))
+print("life['animals'] keys is: ", list(life['animals'].keys()))
+print("life['animals']['cats'] values are: ", list(life['animals']['cats']))
+
+
