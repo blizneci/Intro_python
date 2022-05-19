@@ -129,7 +129,7 @@ My smartphone can {self.smartphone.does()}"""
 
 robbie = Robot('Robbie')
 
-if __name__ == '__main__':
+def main():
     print("# 1")
     print("Thing is :" , Thing)
     # Выводится <class '__main__.Thing'>
@@ -178,4 +178,8 @@ if __name__ == '__main__':
     print("# 10")
     print(f"{robbie.name} does: ")
     print(robbie.does())
+
+
+if __name__ == '__main__':
+    main()
 
